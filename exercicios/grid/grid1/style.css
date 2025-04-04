@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'header header'
+    'aside article'
+    'section section'
+    'footer footer'
+    ;
+    grid-auto-rows: 100px;
+}
+
+header{
+    align-self: center;
+    background-color: blueviolet;
+}
+
+aside{
+    grid-area: aside;
+    background-color: aqua;
+}
+
+article{
+    grid-area: article;
+    background-color: rgba(0, 128, 0, 0.74);
+}
+
+section{
+    grid-area: section;
+    background-color: blue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: brown;
+}
+
